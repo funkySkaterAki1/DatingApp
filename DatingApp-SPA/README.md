@@ -1,6 +1,10 @@
 # DatingAppSPA
 
+<<<<<<< HEAD
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+=======
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
 
 ## Development server
 

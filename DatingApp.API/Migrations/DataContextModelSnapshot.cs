@@ -14,6 +14,7 @@ namespace DatingApp.API.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
+<<<<<<< HEAD
                 .HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
 
             modelBuilder.Entity("DatingApp.API.Models.Like", b =>
@@ -82,10 +83,14 @@ namespace DatingApp.API.Migrations
 
                     b.ToTable("Photos");
                 });
+=======
+                .HasAnnotation("ProductVersion", "3.0.1");
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
 
             modelBuilder.Entity("DatingApp.API.Models.User", b =>
                 {
                     b.Property<int>("Id")
+<<<<<<< HEAD
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("City");
@@ -113,6 +118,19 @@ namespace DatingApp.API.Migrations
                     b.Property<byte[]>("PasswordSalt");
 
                     b.Property<string>("Username");
+=======
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<byte[]>("PasswordHash")
+                        .HasColumnType("BLOB");
+
+                    b.Property<byte[]>("PasswordSalt")
+                        .HasColumnType("BLOB");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("TEXT");
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
 
                     b.HasKey("Id");
 
@@ -122,14 +140,23 @@ namespace DatingApp.API.Migrations
             modelBuilder.Entity("DatingApp.API.Models.Value", b =>
                 {
                     b.Property<int>("Id")
+<<<<<<< HEAD
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Name");
+=======
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
 
                     b.HasKey("Id");
 
                     b.ToTable("Values");
                 });
+<<<<<<< HEAD
 
             modelBuilder.Entity("DatingApp.API.Models.Like", b =>
                 {
@@ -164,6 +191,8 @@ namespace DatingApp.API.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
+=======
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
 #pragma warning restore 612, 618
         }
     }

@@ -1,6 +1,7 @@
 ﻿{
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
+<<<<<<< HEAD
     "windowsAuthentication": false, 
     "anonymousAuthentication": true, 
     "iisExpress": {
@@ -28,3 +29,32 @@
     }
   }
 }
+=======
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:15023",
+      "sslPort": 44303
+    }
+  },
+  "profiles": {
+    // "IIS Express": {
+    //   "commandName": "IISExpress",
+    //   "launchBrowser": true,
+    //   "launchUrl": "weatherforecast",
+    //   "environmentVariables": {
+    //     "ASPNETCORE_ENVIRONMENT": "Development"
+    //   }
+    // },
+    "DatingApp.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "applicationUrl": "http://localhost:5001;",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd

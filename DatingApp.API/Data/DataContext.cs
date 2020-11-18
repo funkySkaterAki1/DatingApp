@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 using DatingApp.API.Models;
 using Microsoft.EntityFrameworkCore;
+=======
+using Microsoft.EntityFrameworkCore;
+using DatingApp.API.Models;
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
 
 namespace DatingApp.API.Data
 {
     public class DataContext : DbContext
     {
+<<<<<<< HEAD
         public DataContext(DbContextOptions<DataContext> options) : base(options) {}
 
         public DbSet<Value> Values { get; set; }
@@ -40,5 +46,11 @@ namespace DatingApp.API.Data
                  .WithMany(m => m.MessagesReceived)
                  .OnDelete(DeleteBehavior.Restrict);
          }
+=======
+        public DataContext(DbContextOptions<DataContext> options) : base(options){}
+        public DbSet<Value> Values { get; set; }
+        
+        public DbSet<User> Users { get; set; }
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
     }
 }

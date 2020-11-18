@@ -10,7 +10,11 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
+<<<<<<< HEAD
     expect(page.getTitleText()).toEqual('Welcome to DatingApp-SPA!');
+=======
+    expect(page.getTitleText()).toEqual('DatingApp-SPA app is running!');
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
   });
 
   afterEach(async () => {

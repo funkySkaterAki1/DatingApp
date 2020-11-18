@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+<<<<<<< HEAD
 @import '../node_modules/bootswatch/dist/united/bootstrap.min.css';
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import '../node_modules/alertifyjs/build/css/alertify.min.css';
@@ -51,3 +52,8 @@
     border-top: 1px solid #eee;
     padding: 15px 0;
   }
+=======
+@import '../node_modules//font-awesome/css/font-awesome.min.css';
+@import '../node_modules/alertifyjs/build/css/alertify.min.css';
+@import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css'
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd

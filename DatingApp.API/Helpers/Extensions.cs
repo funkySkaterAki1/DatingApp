@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 using System;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+=======
+using Microsoft.AspNetCore.Http;
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
 
 namespace DatingApp.API.Helpers
 {
@@ -12,6 +16,7 @@ namespace DatingApp.API.Helpers
             response.Headers.Add("Application-Error", message);
             response.Headers.Add("Access-Control-Expose-Headers", "Application-Error");
             response.Headers.Add("Access-Control-Allow-Origin", "*");
+<<<<<<< HEAD
         }
 
         public static void AddPagination(this HttpResponse response,
@@ -32,6 +37,9 @@ namespace DatingApp.API.Helpers
                 age--;
 
             return age;
+=======
+
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
         }
     }
 }

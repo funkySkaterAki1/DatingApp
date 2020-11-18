@@ -8,6 +8,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
   registerMode = false;
+<<<<<<< HEAD
+=======
+  values: any;
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
 
   constructor(private http: HttpClient) { }
 
@@ -18,6 +22,10 @@ export class HomeComponent implements OnInit {
     this.registerMode = true;
   }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
   cancelRegisterMode(registerMode: boolean) {
     this.registerMode = registerMode;
   }

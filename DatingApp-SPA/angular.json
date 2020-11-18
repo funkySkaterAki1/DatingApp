@@ -13,7 +13,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "../DatingApp.API/wwwroot",
+=======
+            "outputPath": "dist/DatingApp-SPA",
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -44,7 +48,11 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
+<<<<<<< HEAD
               "buildOptimizer": false,
+=======
+              "buildOptimizer": true,
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
               "budgets": [
                 {
                   "type": "initial",
@@ -91,9 +99,13 @@
             "styles": [
               "src/styles.css"
             ],
+<<<<<<< HEAD
             "scripts": [
               "node_modules/alertifyjs/build/alertify.min.js"
             ]
+=======
+            "scripts": []
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
           }
         },
         "lint": {

@@ -1,11 +1,15 @@
+<<<<<<< HEAD
 using System;
 using System.Collections.Generic;
 
+=======
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
 namespace DatingApp.API.Models
 {
     public class User
     {
         public int Id { get; set; }
+<<<<<<< HEAD
         public string Username { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
@@ -24,5 +28,13 @@ namespace DatingApp.API.Models
         public virtual ICollection<Like> Likees { get; set; }
         public virtual ICollection<Message> MessagesSent { get; set; }
         public virtual ICollection<Message> MessagesReceived { get; set; }
+=======
+
+        public string Username { get; set; }
+
+        public byte[] PasswordHash { get; set; }
+
+        public byte[] PasswordSalt { get; set; }
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
     }
 }

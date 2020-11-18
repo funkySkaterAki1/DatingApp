@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
 import { AlertifyService } from '../_services/alertify.service';
+<<<<<<< HEAD
 import {
   FormGroup,
   FormControl,
@@ -10,6 +11,8 @@ import {
 import { BsDatepickerConfig } from 'ngx-bootstrap';
 import { User } from '../_models/user';
 import { Router } from '@angular/router';
+=======
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
 
 @Component({
   selector: 'app-register',
@@ -17,6 +20,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+<<<<<<< HEAD
   @Output() cancelRegister = new EventEmitter();
   user: User;
   registerForm: FormGroup;
@@ -71,4 +75,29 @@ export class RegisterComponent implements OnInit {
   cancel() {
     this.cancelRegister.emit(false);
   }
+=======
+  model: any = {};
+  @Output() cancelRegister = new EventEmitter();
+  
+  constructor(private authService: AuthService, private alertify: AlertifyService) { }
+
+  ngOnInit() {
+  }
+
+  register() {
+this.authService.register(this.model)
+.subscribe(() => {
+  this.alertify.success('registration successful');
+}, error => {
+  this.alertify.error(error);
+});
+
+  }
+
+  cancel() {
+    console.log('cancelled');
+    this.cancelRegister.emit(false);
+  }
+
+>>>>>>> 1f2b7cbd01503849d02f4eb688bbfdfc35e263fd
 }
